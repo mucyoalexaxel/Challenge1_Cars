@@ -1,0 +1,118 @@
+@import url(https://fonts.google.com/specimen/Lexend+Deca);
+@import url(https://fonts.google.com/specimen/Big+Shoulders+Display);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(0, 0%, 95%);
+    
+}
+/* Cards */
+.main{
+    display: flex;
+    margin: 10vh 15vw 15vh 15vw;
+    
+}
+/* Sedan Card */
+.Sedan{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0px 0px 10px;
+    padding: 5vh 3vw 0vh 3vw;
+    min-height: 75vh; 
+
+}
+/* Suv Card */
+.Suvs{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(184, 100%, 22%);
+    padding: 5vh 3vw 0vh 3vw;
+    min-height: 75vh; 
+    
+    
+}
+/* Luxury Card */
+.Luxury{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 10px 10px 0px; 
+    padding: 5vh 3vw 0vh 3vw;
+    min-height: 75vh; 
+    
+    
+}
+/* Text Fonts & Weight*/
+/* Title Class*/
+.t_size{
+    margin: 5vh 2vw 4vh 0vw;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display',sans-serif;
+    font-weight: 700;
+    text-align: justify;
+
+}
+
+/* Paragraph Class*/
+.p_size{                    
+    margin-bottom: 3vh;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px ;
+    font-weight: 400;
+    font-family: 'Lexend Deca',sans-serif;
+    text-align: justify;
+    
+}
+
+/*Link Button*/
+.cta{
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    background-color: hsl(0, 0%, 95%);
+    padding: 20px 30px;
+    text-decoration: none;
+    text-align: center;
+    align-self: flex-start;
+    width: 70%;
+    border-radius: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;    
+}
+
+.cta:hover{
+    color:hsl(0, 0%, 95%);
+    background-color: none;
+    text-decoration: none;
+    text-align: center;
+    align-self: flex-start;
+    border: 3px solid hsl(0, 0%, 95%);
+    border-radius: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;    
+}
+
+.Sedan a{
+    color: hsl(31, 77%, 52%);
+}
+.Sedan a:hover{
+    background-color: hsl(31, 77%, 52%);
+}
+
+.Suvs a{
+    color: hsl(184, 100%, 22%);
+}
+.Suvs a:hover{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.Luxury a{
+    color: hsl(179, 100%, 13%);
+}
+.Luxury a:hover{
+    background-color: hsl(179, 100%, 13%);
+}
