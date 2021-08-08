@@ -1,5 +1,5 @@
-@import url(https://fonts.google.com/specimen/Lexend+Deca);
-@import url(https://fonts.google.com/specimen/Big+Shoulders+Display);
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -11,89 +11,86 @@ body{
     
 }
 /* Cards */
+
 .main{
     display: flex;
-    margin: 10vh 15vw 15vh 15vw;
+    margin: 15vh 15vw 15vh 15vw;
+    min-height: 70vh;
+    min-width: 50vw;
     
 }
-/* Sedan Card */
-.Sedan{
+/* Card Properties */
+/* Common Card Properties */
+.card{
     display: flex;
     flex-direction: column;
-    background-color: hsl(31, 77%, 52%);
-    border-radius: 10px 0px 0px 10px;
-    padding: 5vh 3vw 0vh 3vw;
-    min-height: 75vh; 
+    padding: 8vh 3vw 8vh 3vw;
 
+}
+/* Sedan Card */
+.Sedan{    
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0px 0px 10px;   
 }
 /* Suv Card */
 .Suvs{
-    display: flex;
-    flex-direction: column;
     background-color: hsl(184, 100%, 22%);
-    padding: 5vh 3vw 0vh 3vw;
-    min-height: 75vh; 
-    
     
 }
 /* Luxury Card */
 .Luxury{
-    display: flex;
-    flex-direction: column;
     background-color: hsl(179, 100%, 13%);
-    border-radius: 0px 10px 10px 0px; 
-    padding: 5vh 3vw 0vh 3vw;
-    min-height: 75vh; 
-    
-    
+    border-radius: 0px 10px 10px 0px;    
 }
 /* Text Fonts & Weight*/
+
+/* Common Text Properties*/
+.size{
+    text-align: left;
+    margin-bottom: 5vh;
+}
 /* Title Class*/
 .t_size{
-    margin: 5vh 2vw 4vh 0vw;
     color: hsl(0, 0%, 95%);
-    font-family: 'Big Shoulders Display',sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 40px;
     font-weight: 700;
-    text-align: justify;
-
+    margin-top: 5vh;
 }
 
 /* Paragraph Class*/
-.p_size{                    
-    margin-bottom: 3vh;
+.p_size{
     color: hsla(0, 0%, 100%, 0.75);
     font-size: 15px ;
     font-weight: 400;
-    font-family: 'Lexend Deca',sans-serif;
-    text-align: justify;
-    
+    font-family: 'Lexend Deca',sans-serif;    
 }
 
 /*Link Button*/
-.cta{
-    margin-top: 5vh;
-    margin-bottom: 2vh;
-    background-color: hsl(0, 0%, 95%);
-    padding: 20px 30px;
+/* Common Link Properties */
+.com{
     text-decoration: none;
     text-align: center;
     align-self: flex-start;
     width: 70%;
+    padding: 20px 30px;
     border-radius: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 400;    
+    font-family: 'Lexend Deca',sans-serif;
+    font-size: 15px ;
+    font-weight: 400;
+    margin-bottom: 2vh;
+}
+.cta{
+    
+    background-color: hsl(0, 0%, 95%);  
 }
 
 .cta:hover{
     color:hsl(0, 0%, 95%);
     background-color: none;
-    text-decoration: none;
-    text-align: center;
-    align-self: flex-start;
     border: 3px solid hsl(0, 0%, 95%);
-    border-radius: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 400;    
+    
+   
 }
 
 .Sedan a{
